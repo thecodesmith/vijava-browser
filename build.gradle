@@ -1,5 +1,5 @@
 apply plugin: 'java'
-/* apply plugin: 'maven' */
+apply plugin: 'application'
 
 group = 'com.pitchcat'
 version = '1.0-SNAPSHOT'
@@ -16,3 +16,5 @@ repositories {
 dependencies {
     compile group: 'com.vmware', name: 'vijava', version:'5.1'
 }
+
+mainClassName = 'com.pitchcat.vijavabrowser.Application'
