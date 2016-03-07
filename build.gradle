@@ -1,0 +1,18 @@
+apply plugin: 'java'
+/* apply plugin: 'maven' */
+
+group = 'com.pitchcat'
+version = '1.0-SNAPSHOT'
+
+description = 'A simple managed object browser for the vSphere Java API'
+
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+     maven { url "http://repo.maven.apache.org/maven2" }
+}
+
+dependencies {
+    compile group: 'com.vmware', name: 'vijava', version:'5.1'
+}
